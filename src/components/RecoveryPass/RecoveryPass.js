@@ -29,8 +29,8 @@ export default function RecoveryPass() {
 
           <div className="register-link">
             <p>
-              Do you remember your account?
-              <Link to='/' className="btn-register">Login</Link>
+              remember your account?
+              <Link to='/' className="btn-register">Log in</Link>
             </p>
           </div>
 

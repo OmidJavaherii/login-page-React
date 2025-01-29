@@ -102,7 +102,7 @@ export default function Register() {
               validatePassword(e.target.value)
             }}
           />
-          <label id="label-password" required="">Your Password</label>
+          <label id="label-password" required="">Create Password</label>
         </div>
         <div className='validation valid-singUp'>
           <span>{!checkIsLongEnough ? '.8 Characters' : ''}</span>
@@ -130,7 +130,7 @@ export default function Register() {
               correctPassword(e.target.value , pass)
             }}
           />
-          <label id="label-password" required="">Try Again Password</label>
+          <label id="label-password" required="">Confirm Password</label>
         </div>
         <div className='validation valid-correct'>
           <span>{!checkCorrect ? '.Not Same' : ''}</span>
@@ -139,8 +139,8 @@ export default function Register() {
 
         <div className="register-link">
           <p>
-            Don you have an account?
-            <Link to='/' className="btn-register">Login</Link>
+            Already a member?
+            <Link to='/' className="btn-register">Log in</Link>
           </p>
         </div>
 
