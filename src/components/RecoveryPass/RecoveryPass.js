@@ -9,7 +9,7 @@ export default function RecoveryPass() {
   return (
       <div className="login-box">
         <form action="#">
-          <h1>Reset Password</h1>
+          <h1 className='header'>Reset Password</h1>
 
           <div className="input-box">
             <i className="material-symbols-outlined">mail</i>
@@ -17,7 +17,7 @@ export default function RecoveryPass() {
               type="email"
               id="input-email"
               className="input-tag"
-              autocomplete="off"
+              autoComplete="off"
               value={email}
               onFocus={e => e.target.nextElementSibling.style.top = "0"}
               onBlur={e => email.length === 0 ? (e.target.nextElementSibling.style.top = "50%") : e.target.nextElementSibling.style.top = "0"}
@@ -25,7 +25,7 @@ export default function RecoveryPass() {
             />
             <label id="label-email" required="">Email</label>
           </div>
-          <a href="##" className="btn-login" id="btn-login">Send Email</a>
+          <a href="##" className="btn-login recovery-login">Send Email</a>
 
           <div className="register-link">
             <p>

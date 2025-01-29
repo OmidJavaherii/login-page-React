@@ -1,6 +1,9 @@
-.login-box h1 {
-  margin-bottom: 0.5rem;
+.login-header {
+  margin-bottom: -1rem;
 }
-.btn-login{
-  margin: 0 0;
+.login-loginBtn{
+  margin: 2em 0;
+}
+.valid-login {
+  padding: 0.5em 0;
 }

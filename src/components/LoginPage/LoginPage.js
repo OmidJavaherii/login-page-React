@@ -51,7 +51,7 @@ export default function LoginPage() {
     <div className="login-box">
 
       <form action="#">
-        <h1>Login</h1>
+        <h1 className='login-header'>Login</h1>
 
         <div className="input-box">
           <i className="material-symbols-outlined">mail</i>
@@ -59,7 +59,7 @@ export default function LoginPage() {
             type="email"
             id="input-email"
             className="input-tag"
-            autocomplete="off"
+            autoComplete="off"
             value={email}
             onFocus={e => e.target.nextElementSibling.style.top = "0"}
             onBlur={e => email.length === 0 ? (e.target.nextElementSibling.style.top = "50%") : e.target.nextElementSibling.style.top = "0"}
@@ -76,7 +76,7 @@ export default function LoginPage() {
             type={visible ? "password" : 'text'}
             id="input-password"
             className="input-tag"
-            autocomplete="off"
+            autoComplete="off"
             value={pass}
             required onFocus={e => e.target.nextElementSibling.style.top = "0"}
             onBlur={e => pass.length === 0 ? (e.target.nextElementSibling.style.top = "50%") : e.target.nextElementSibling.style.top = "0"}
@@ -87,12 +87,12 @@ export default function LoginPage() {
           />
           <label id="label-password" required="">Password</label>
         </div>
-        <div className='validation'>
-          <span>{!checkIsLongEnough ? '8 Characters' : ''}</span>
-          <span>{!checkHasUpper ? 'Upper Case' : ''}</span>
-          <span>{!checkHasLower ? 'Lower case' : ''}</span>
-          <span>{!checkHasSpecial ? 'Specials' : ''}</span>
-          <span>{!checkHasDigit ? 'Digits' : ''}</span>
+        <div className='validation valid-login'>
+          <span>{!checkIsLongEnough ? '.8 Characters' : ''}</span>
+          <span>{!checkHasUpper ? '.Upper Case' : ''}</span>
+          <span>{!checkHasLower ? '.Lower case' : ''}</span>
+          <span>{!checkHasSpecial ? '.Specials' : ''}</span>
+          <span>{!checkHasDigit ? '.Digits' : ''}</span>
         </div>
         <div className="remember-forgot">
           <label>
@@ -101,7 +101,7 @@ export default function LoginPage() {
           </label>
           <Link to='/recovery' className="btn-forgot-password">Forgot Password?</Link>
         </div>
-        <a href="##" className="btn-login">Login</a>
+        <a href="##" className="btn-login login-loginBtn">Login</a>
 
         <div className="register-link">
           <p>

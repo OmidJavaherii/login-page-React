@@ -1,0 +1,18 @@
+.sign-up {
+    margin-bottom: -1.7rem;
+  }
+  .signUpBtn{
+    margin: 0 0 -0.5em 0;
+  }
+
+  .try-again {
+    top: -2em;
+    height: 100%;
+  }
+  .valid-singUp {
+    padding-bottom: 2em;
+  }
+  .valid-correct {
+    height: 100%;
+    margin-top: -5em !important;
+  }
